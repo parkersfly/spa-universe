@@ -15,7 +15,7 @@ export class Router {
     }
      handle () {
         const { pathname } = window.location
-        const route = this.routes[pathname]
+        const route = this.routes[pathname] || "/pages/home.html"
 
         console.log(route)
     
